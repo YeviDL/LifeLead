@@ -5,6 +5,8 @@ import com.yevstaf.lifelead.lifelead.service.TasksService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api")
 @RequiredArgsConstructor
@@ -13,7 +15,7 @@ public class TaskController {
     private final TasksService tasksService;
 
     @GetMapping("/tasks")
-    public Tasks getTasks() {
+    public List<Tasks> getTasks() {
 
         return tasksService.queryTasksResponse();
     }
