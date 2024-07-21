@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class TasksResponse {
+public class Tasks {
 
     private String name;
     private Priority priority;
