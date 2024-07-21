@@ -10,4 +10,7 @@ public class TasksService {
     public TasksResponse queryTasksResponse() {
         return new TasksResponse("SomeTask", Priority.LOW, "Dunno"); //TODO get from DB
     }
+
+    public void saveTasks() {
+    }
 }
